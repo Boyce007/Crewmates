@@ -7,7 +7,7 @@ const Create = () => {
   const colors = ["Red","Green","Blue","Purple","Yellow","Orange","Pink","Rainbow"]
 
   const handleChange = (e) => {
-    const {name,value} = e.target.value;
+    const {name,value} = e.target;
     setCrewmate((prev)=> {
       return {
         ...prev,
@@ -20,7 +20,7 @@ const Create = () => {
     e.preventDefault();
     await supabase
     .from("Crewmates")
-    .insert({name:crewmate.title,speed:crewmate.speed,color:crewmate.color})
+    .insert({name:crewmate.name,speed:crewmate.speed,color:crewmate.color})
     .select();
     window.location = "/";
 
@@ -40,7 +40,7 @@ const Create = () => {
 
                 <label >Color</label><br />
                 {colors.map(color=>(
-                <label key={color}>
+                <label style={{display:'flex',flexDirection:"row-reverse",justifyContent:"center"}} key={color}>
                   {color}
                     <input
                      type="radio"
@@ -48,11 +48,11 @@ const Create = () => {
                       checked={crewmate.color===color}
                       onChange={handleChange}
                       style={{display:'flex'}}
+                      name="color"
                        />
                     
                 </label>
-                ))}
-                            
+                ))}        
                 <br/>
                 <input type="submit" value="Submit" onClick={createCrewmate} />
 
