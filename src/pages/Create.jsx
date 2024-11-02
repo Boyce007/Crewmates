@@ -1,18 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
 import { supabase } from '../client'
+import './pages.css'
 const Create = () => {
   const [crewmate,setCrewmate] = useState({name:"",speed:0.0,color:""})
+  const colors = ["Red","Green","Blue","Purple","Yellow","Orange","Pink","Rainbow"]
 
   const handleChange = (e) => {
-    const {name,value} = e.target;
+    const {name,value} = e.target.value;
     setCrewmate((prev)=> {
       return {
         ...prev,
         [name]:value,
-      }
-    })
+      }})
   }
+  
   
   const createCrewmate = async (e) => {
     e.preventDefault();
@@ -26,19 +28,31 @@ const Create = () => {
   }
 
   return (
-    <div>
+    <div className='create-crewmate-container'>
       <form>
                 <label >Name</label> <br />
-                <input type="text" id="title" name="title" onChange={handleChange} /><br />
+                <input type="text" id="name" name="name"  onChange={handleChange} /><br />
                 <br/>
 
                 <label >Speed</label><br />
-                <input type="text" id="author" name="author" onChange={handleChange} /><br />
+                <input type="text" id="speed" name="speed"  onChange={handleChange} /><br />
                 <br/>
 
                 <label >Color</label><br />
-                <input rows="5" cols="50" id="description" onChange={handleChange}>
-                </input>
+                {colors.map(color=>(
+                <label key={color}>
+                  {color}
+                    <input
+                     type="radio"
+                      value={color}
+                      checked={crewmate.color===color}
+                      onChange={handleChange}
+                      style={{display:'flex'}}
+                       />
+                    
+                </label>
+                ))}
+                            
                 <br/>
                 <input type="submit" value="Submit" onClick={createCrewmate} />
 
