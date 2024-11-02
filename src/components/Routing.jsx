@@ -4,9 +4,9 @@ import "./Routing.css"
 const Routing = () => {
   return (
     <div className='routing-container'>
-        <Link to='/' style={{margin:20}}>Home</Link>
-        <Link to="/create" style={{margin:20}}> Create a Crewmate</Link>
-        <Link to={"/Gallery"} style={{margin:20}}> Crewmate Gallery</Link>
+        <Link to='/' style={{margin:20,textDecoration: 'none',color:'black'}} >Home</Link>
+        <Link to="/create" style={{margin:20,textDecoration: 'none',color:'black'}} > Create a Crewmate</Link>
+        <Link to={"/Gallery"} style={{margin:20,textDecoration: 'none',color:'black'}} > Crewmate Gallery</Link>
      
     </div>
   )
