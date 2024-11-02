@@ -25,8 +25,8 @@ function App() {
   ])
 
   return (
-    <div>
-      <Routing></Routing>
+    <div className='app-container'>
+      <Routing/>
       {element}
     </div>
   )
