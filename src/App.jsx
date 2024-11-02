@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom'
 import Home from './pages/Home'
 import Create from './pages/Create'
 import Gallery from './pages/Gallery'
+import Routing from './components/Routing'
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <Routing></Routing>
       {element}
     </div>
   )
