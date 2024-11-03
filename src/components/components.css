@@ -1,16 +1,20 @@
 .routing-container {
     display: flex;
     flex-direction: column;
-    
-    
     height: 250px; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-  
-    
 
-
+}
+.gallery-item-container {
+    display: flex;
+    border-radius: 1cm;
+    flex-direction: column;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    font-size:larger;
 }
