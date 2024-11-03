@@ -9,7 +9,7 @@
     left: 0;
 
 }
-.gallery-item-container {
+.Gallery-item-container {
     display: flex;
     border-radius: 1cm;
     flex-direction: column;
@@ -19,3 +19,43 @@
     font-size:larger;
     margin: 20px;
 }
+.Red {
+    background-color: grey;
+    color: white;
+    box-shadow: 5px 5px 15px 5px rgba(255, 0, 0, 0.7); /* Red colored shadow */
+    
+}
+.Rainbow {
+    box-shadow:
+        5px 3px 5px red,
+        10px 5px 5px green,
+        15px 10px 5px indigo,
+        20px 15px 5px violet,
+        30px 20px 5px yellow;
+}
+
+.Green {
+    box-shadow: 5px 5px 15px 5px rgba(4, 240, 63, 0.7);
+
+}
+.Blue {
+    box-shadow: 5px 5px 15px 5px rgba(4, 71, 240, 0.7);
+
+}
+.Purple {
+    box-shadow: 5px 5px 15px 5px rgba(193, 4, 240, 0.7)
+}
+.Yellow {
+    box-shadow: 5px 5px 15px 5px rgba(212, 240, 4, 0.7)
+
+}
+.Orange {
+    box-shadow: 5px 5px 15px 5px rgba(240, 161, 4, 0.7)
+
+}
+.Pink {
+    box-shadow: 5px 5px 15px 5px rgba(240, 4, 146, 0.7)
+
+}
+
+
