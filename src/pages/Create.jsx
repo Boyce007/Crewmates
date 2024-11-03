@@ -29,6 +29,8 @@ const Create = () => {
 
   return (
     <div className='create-crewmate-container'>
+      <h1>Create a crewmate</h1>
+      <img src="src/assets/createCrewmate.png" alt="" />
       <form>
                 <label >Name</label> <br />
                 <input type="text" id="name" name="name"  onChange={handleChange} /><br />

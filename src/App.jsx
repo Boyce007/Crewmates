@@ -4,6 +4,7 @@ import Create from './pages/Create'
 import Gallery from './pages/Gallery'
 import Routing from './components/Routing'
 import CrewmateDetails from './pages/CrewmateDetails'
+import EditCrewMate from './pages/EditCrewMate'
 import './App.css'
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
       path:"crewmate/:id",
       element:<CrewmateDetails/>,
     },
+    {
+      path:"/edit/:id",
+      element:<EditCrewMate/>
+    }
   ])
 
   return (
