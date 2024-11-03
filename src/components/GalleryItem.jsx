@@ -5,7 +5,7 @@ import React from 'react'
 const GalleryItem = ({name,speed,color}) => {
   return (
     <div className='gallery-item-container'>
-      <p>Name of crewmate:{name}</p>
+      <p>Name of crewmate: {name}</p>
       <p>Speed of crewmate {speed}mph</p>
       <p>Color of crewmate {color}</p>
     </div>

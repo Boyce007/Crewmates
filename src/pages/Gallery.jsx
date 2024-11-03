@@ -17,10 +17,14 @@ const Gallery = () => {
   return (
     <div>
       <h1>View all crewmates</h1>
-    <GalleryItem 
-     name={crewmates[0].name}
-     color={crewmates[0].color} 
-     speed={crewmates[0].speed}/>
+      {crewmates.map(crewmate=>(
+        <GalleryItem
+        key={crewmate.id} 
+        name={crewmate.name}
+        color={crewmate.color} 
+        speed={crewmate.speed}/>
+      ))}
+    
     </div>
   )
 }
