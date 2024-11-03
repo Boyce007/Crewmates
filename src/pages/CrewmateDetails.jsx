@@ -11,7 +11,7 @@ const CrewmateDetails = () => {
       <h1>Crewmate: {crewmate.name}</h1>
       <p>speed: {crewmate.speed}</p>
       <p>Color: {crewmate.color}</p>
-      <button onClick={()=>navigate(`/edit/${crewmate.id}`)}>Edit Crewmate</button>
+      <button onClick={()=>navigate(`/edit/${crewmate.id}`) }>Edit Crewmate</button>
     </div>
   )
 }
