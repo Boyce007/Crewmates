@@ -2,9 +2,9 @@
 
 Submitted by: **Daniel Boyce**
 
-This web app: **All CRUD functionalialty with among us crewmates**
+This web app: **All CRUD functionality with among us crewmates**
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
@@ -13,8 +13,8 @@ The following **required** functionality is completed:
 - [ X ] **A create form allows users to add new cremates**
 - [ X ] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
 - [ X ] **The site displays a summary page of all the user's added crewmates**
-- [ ] **A previously created crewmate can be updated from the crewmate list**
-- [ ] **A previously created crewmate can be deleted from the crewmate list**
+- [ X ] **A previously created crewmate can be updated from the crewmate list**
+- [ X ] **A previously created crewmate can be deleted from the crewmate list**
 - [ X ] **Each crewmate has a direct, unique link to an info page about them**
 
 The following **optional** features are implemented:
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/WI8AMza.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Daniel Boyce
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
