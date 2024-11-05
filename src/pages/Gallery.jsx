@@ -13,7 +13,7 @@ const Gallery = () => {
       setCrewmates(data)
     }
     fetchCrewmates();
-  },[crewmates])
+  },[])
   return (
     <div>
       <h1>View all crewmates</h1>
